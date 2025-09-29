@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explor Dom</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+        border-radius: 20px;  
+         margin: 5px;
+         padding: 5px;
+
+    
+    }
+    </style>
+</head>
+<body>
+   <main>
+    <section>
+        <h1>Explor Dom</h1>
+     
+       <article  > 
+        <h3>article-1</h3>
+        <p  title="I am a most improtent  author" class="author" id="bestSeler">author-1</p>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus incidunt blanditiis voluptatem animi pariatur laborum architecto sequi distinctio, mollitia modi adipisci assumenda ipsum! Omnis mollitia perspiciatis expedita ut aliquid obcaecati!</p>
+       </article>
+       <article class="special">
+        <h3>article-2</h3>
+        <p class="author">author-2</p>
+        <p class="description">Optio consequuntur ex maiores similique ipsa porro voluptates aliquam omnis dolorum ab! Odit voluptatum placeat nesciunt alias velit eius assumenda, repudiandae voluptatibus delectus nam eos laudantium recusandae, corporis, laborum repellendus.</p>
+       </article>
+       <article class="special">
+        <h3>article-3</h3>
+        <p class="author">author-3</p>
+        <p class="description">Vitae sunt dignissimos corporis inventore ad, nostrum voluptates nobis similique alias blanditiis distinctio culpa modi unde assumenda cumque suscipit officiis repudiandae totam. Asperiores dignissimos eum hic sequi praesentium, libero eos?</p>
+       </article>
+    </section>
+   </main> 
+</body>
+<script>
+    document.body.style.backgroundColor = "tomato"
+var authors = document.querySelectorAll('.special h3')
+for(var i = 0; i <authors.length ; i++  ){
+ var  element  = authors[i];
+ console.log(element.innerHTML)
+ element.innerHTML = "Lekhok"+(i+1)
+ element.setAttribute('title','all authore is same')
+ element.style.backgroundColor = "lightblue";
+ element.style.margin = "10px"
+
+
+}
+
+</script>
+</html>

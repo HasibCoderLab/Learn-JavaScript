@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>article</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Explor Dom</h1>
+         
+           <article  > 
+            <h3>article-1</h3>
+            <p  title="I am a most improtent  author" class="author" id="bestSeler">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet  perspiciatis expedita ut aliquid obcaecati!</p>
+           </article>
+           <article class="special" id="first-article">
+            <h3>article-2</h3>
+            <p class="author">author-2</p>
+            <p class="description">Optio omnis dolorum ab! recusandae, corporis, laborum repellendus.</p>
+           </article>
+           <article class="special">
+            <h3>article-3</h3>
+            <p class="author">author-3</p>
+            <p class="description">Vitae s inventore ad, nostrum  eum hic sequi praesentium, libero eos?</p>
+           </article>
+           <article>
+
+            <h3>grosarylist</h3>
+            <ul id="gift-list">
+             <li>gift item -1</li>
+            <li>gift item -2</li>
+            <li>gift item -3</li>
+            <li>gift item -4</li>
+            <li>gift item -5</li> 
+        </ul>
+           </article>
+        </section>
+       </main> 
+
+
+  <script>
+const article  = document.getElementById('first-article"');
+const newPragraph = document('p');
+newPragraph.innerHTML = 'This is added'
+article.appendChild(newPragraph)
+
+
+
+// add one more gift item
+const ul = document.getElementById('gift-list')
+const li = document.createElement('li')
+li.innerHTML = 'Brand new gift'
+ul.appendChild(li)
+
+
+
+  </script>
+</body>
+</html>
